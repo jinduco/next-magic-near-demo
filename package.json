@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@magic-ext/near": "^16.1.0",
+    "@magic-sdk/admin": "^2.0.1",
     "magic-sdk": "^21.1.0",
     "near-api-js": "^2.1.4",
     "next": "13.5.6",
