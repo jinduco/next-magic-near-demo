@@ -22,15 +22,22 @@ export default function Login() {
         email,
       })
 
-      const res = await fetch("/api/login", {
-        method: "POST",
-        headers: {
-          "Content-type": "application/json",
-          Authorization: `Bearer ${didToken}`,
-        },
-      })
+      // TODO: Work on implementing new NEXT.js api router properly
+      // const res = await fetch("/api/login", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-type": "application/json",
+      //     Authorization: `Bearer ${didToken}`,
+      //   },
+      // })
 
-      if (res.ok) {
+      // if (res.ok) {
+      //   const userInfo = await magic.user.getInfo()
+      //   setUser(userInfo)
+      //   router.push("/dashboard")
+      // }
+
+      if (didToken) {
         const userInfo = await magic.user.getInfo()
         setUser(userInfo)
         router.push("/dashboard")
